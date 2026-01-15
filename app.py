@@ -5,6 +5,9 @@ from flask import Flask, request, jsonify, render_template
 
 # Initialize the Flask App
 app = Flask(__name__)
+if __name__ == "__main__":
+    app.run()
+
 
 # --- 1. MODEL LOADING LOGIC ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
