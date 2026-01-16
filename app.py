@@ -65,10 +65,8 @@ def predict():
             lvl, clr, adv = "LOW", "#2ecc71", "Normal monitoring."
         elif risk_score <= 0.60:
             lvl, clr, adv = "MODERATE", "#f1c40f", "Increase observation frequency."
-        elif risk_score <= 0.80:
-            lvl, clr, adv = "HIGH", "#e67e22", "Warning: Structural survey recommended."
         else:
-            lvl, clr, adv = "IMMEDIATE ACTION", "#e74c3c", "Danger: Evacuation protocol may be needed."
+            lvl, clr, adv = "HIGH", "#e74c3c", "Danger: Evacuation protocol may be needed."
 
         return jsonify({
             'status': 'success',
