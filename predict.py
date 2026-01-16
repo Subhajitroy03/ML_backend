@@ -36,8 +36,6 @@ def main():
             lvl, adv = "LOW", "Normal monitoring."
         elif risk_score <= 0.60:
             lvl, adv = "MODERATE", "Increase observation frequency."
-        elif risk_score <= 0.80:
-            lvl, adv = "HIGH", "Warning: Structural survey recommended."
         else:
             lvl, adv = "HIGH", "Danger: Evacuation protocol may be needed."
 

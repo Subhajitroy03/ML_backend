@@ -36,7 +36,7 @@ print("="*50 + "\n")
 @app.route('/')
 def home():
     """Renders the HTML interface from the templates folder."""
-    return render_template('index.html')
+    return {'message': 'GLOF Risk Prediction API is running.'}
 
 @app.route('/predict', methods=['POST'])
 def predict():
