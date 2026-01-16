@@ -39,7 +39,7 @@ def main():
         elif risk_score <= 0.80:
             lvl, adv = "HIGH", "Warning: Structural survey recommended."
         else:
-            lvl, adv = "IMMEDIATE ACTION", "Danger: Evacuation protocol may be needed."
+            lvl, adv = "HIGH", "Danger: Evacuation protocol may be needed."
 
         # Output result as JSON so callers can parse it
         print(json.dumps({
