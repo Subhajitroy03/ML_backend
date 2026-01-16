@@ -64,7 +64,7 @@ def predict():
         if risk_score <= 0.30:
             lvl, clr, adv = "LOW", "#2ecc71", "Normal monitoring."
         elif risk_score <= 0.60:
-            lvl, clr, adv = "MODERATE", "#f1c40f", "Increase observation frequency."
+            lvl, clr, adv = "MEDIUM", "#f1c40f", "Increase observation frequency."
         else:
             lvl, clr, adv = "HIGH", "#e74c3c", "Danger: Evacuation protocol may be needed."
 
